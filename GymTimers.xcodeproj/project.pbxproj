@@ -16,6 +16,8 @@
 		29D689782A69D86D0015E41D /* GymTimersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689772A69D86D0015E41D /* GymTimersTests.swift */; };
 		29D689822A69D86D0015E41D /* GymTimersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689812A69D86D0015E41D /* GymTimersUITests.swift */; };
 		29D689842A69D86D0015E41D /* GymTimersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689832A69D86D0015E41D /* GymTimersUITestsLaunchTests.swift */; };
+		29D689922A69D8C40015E41D /* overviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689912A69D8C40015E41D /* overviewView.swift */; };
+		29D689942A69D8DA0015E41D /* overviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689932A69D8DA0015E41D /* overviewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		29D6897D2A69D86D0015E41D /* GymTimersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymTimersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D689812A69D86D0015E41D /* GymTimersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTimersUITests.swift; sourceTree = "<group>"; };
 		29D689832A69D86D0015E41D /* GymTimersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTimersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29D689912A69D8C40015E41D /* overviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overviewView.swift; sourceTree = "<group>"; };
+		29D689932A69D8DA0015E41D /* overviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overviewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		29D689602A69D86B0015E41D /* GymTimers */ = {
 			isa = PBXGroup;
 			children = (
+				29D689902A69D88E0015E41D /* overviewGroup */,
 				29D689612A69D86B0015E41D /* GymTimersApp.swift */,
 				29D689632A69D86B0015E41D /* ContentView.swift */,
 				29D689652A69D86D0015E41D /* Assets.xcassets */,
@@ -131,6 +136,15 @@
 				29D689832A69D86D0015E41D /* GymTimersUITestsLaunchTests.swift */,
 			);
 			path = GymTimersUITests;
+			sourceTree = "<group>";
+		};
+		29D689902A69D88E0015E41D /* overviewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				29D689912A69D8C40015E41D /* overviewView.swift */,
+				29D689932A69D8DA0015E41D /* overviewModel.swift */,
+			);
+			path = overviewGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +279,9 @@
 			files = (
 				29D6896B2A69D86D0015E41D /* Persistence.swift in Sources */,
 				29D689642A69D86B0015E41D /* ContentView.swift in Sources */,
+				29D689942A69D8DA0015E41D /* overviewModel.swift in Sources */,
 				29D689622A69D86B0015E41D /* GymTimersApp.swift in Sources */,
+				29D689922A69D8C40015E41D /* overviewView.swift in Sources */,
 				29D6896E2A69D86D0015E41D /* GymTimers.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
