@@ -17,7 +17,29 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        overviewView()
+        let schedule = ScheduleModel()
+        TabView {
+            overviewView()
+                .badge(0)
+                .tabItem {
+                    Label("Overview", systemImage: "hare")
+                }
+            ToolsView()
+                .badge(0)
+                .tabItem {
+                    Label("Tools", systemImage: "bolt")
+                }
+            ScheduleView()
+                .badge(schedule.hasNextWorkout ? nil : "!")
+                .tabItem {
+                    Label("Schedule", systemImage: "calendar")
+                }
+            SettingsView()
+                .badge(0)
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+        }
     }
 
     private func addItem() {

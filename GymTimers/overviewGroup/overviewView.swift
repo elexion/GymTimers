@@ -16,7 +16,7 @@ struct overviewView: View {
             Text("Workout tracker")
                 .font(.headline)
             HStack {
-                Text("current session: \(overviewModel.totalWorkoutTimer / 60)")
+                Text("current session: \(overviewModel.totalWorkoutTimer)")
                 Button(overviewModel.activeSession ? "pause session" : "Start session") {
                     overviewModel.startWorkout()
                 }

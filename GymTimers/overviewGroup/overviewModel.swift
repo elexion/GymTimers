@@ -8,9 +8,11 @@
 import Foundation
 import Combine
 
-class OverviewModel: ObservableObject {
+final class OverviewModel: ObservableObject {
     @Published var activeSession: Bool = false
     @Published var totalWorkoutTimer = 0
+
+    //@Published var totalTimer = DateComponents.date(from: dateComponents())
     
     func startWorkout() {
         activeSession.toggle()
