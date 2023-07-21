@@ -11,11 +11,12 @@ struct overviewView: View {
     @ObservedObject var overviewModel = OverviewModel()
     
     var body: some View {
+        
         VStack {
             Text("Workout tracker")
                 .font(.headline)
             HStack {
-                Text("current session: \(overviewModel.totalWorkoutTimer)")
+                Text("current session: \(overviewModel.totalWorkoutTimer / 60)")
                 Button(overviewModel.activeSession ? "pause session" : "Start session") {
                     overviewModel.startWorkout()
                 }

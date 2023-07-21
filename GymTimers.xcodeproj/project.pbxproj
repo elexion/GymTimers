@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291B10FC2A6B37C500E93AA4 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B10FB2A6B37C500E93AA4 /* SettingsModel.swift */; };
+		291B10FE2A6B37DE00E93AA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B10FD2A6B37DE00E93AA4 /* SettingsView.swift */; };
 		29D689622A69D86B0015E41D /* GymTimersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689612A69D86B0015E41D /* GymTimersApp.swift */; };
 		29D689642A69D86B0015E41D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689632A69D86B0015E41D /* ContentView.swift */; };
 		29D689662A69D86D0015E41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D689652A69D86D0015E41D /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		291B10FB2A6B37C500E93AA4 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		291B10FD2A6B37DE00E93AA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		29D6895E2A69D86B0015E41D /* GymTimers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymTimers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D689612A69D86B0015E41D /* GymTimersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTimersApp.swift; sourceTree = "<group>"; };
 		29D689632A69D86B0015E41D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291B10FA2A6B37A200E93AA4 /* SettingsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				291B10FB2A6B37C500E93AA4 /* SettingsModel.swift */,
+				291B10FD2A6B37DE00E93AA4 /* SettingsView.swift */,
+			);
+			path = SettingsGroup;
+			sourceTree = "<group>";
+		};
 		29D689552A69D86B0015E41D = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 		29D689602A69D86B0015E41D /* GymTimers */ = {
 			isa = PBXGroup;
 			children = (
+				291B10FA2A6B37A200E93AA4 /* SettingsGroup */,
 				29D689902A69D88E0015E41D /* overviewGroup */,
 				29D689612A69D86B0015E41D /* GymTimersApp.swift */,
 				29D689632A69D86B0015E41D /* ContentView.swift */,
@@ -278,10 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				29D6896B2A69D86D0015E41D /* Persistence.swift in Sources */,
+				291B10FE2A6B37DE00E93AA4 /* SettingsView.swift in Sources */,
 				29D689642A69D86B0015E41D /* ContentView.swift in Sources */,
 				29D689942A69D8DA0015E41D /* overviewModel.swift in Sources */,
 				29D689622A69D86B0015E41D /* GymTimersApp.swift in Sources */,
 				29D689922A69D8C40015E41D /* overviewView.swift in Sources */,
+				291B10FC2A6B37C500E93AA4 /* SettingsModel.swift in Sources */,
 				29D6896E2A69D86D0015E41D /* GymTimers.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
