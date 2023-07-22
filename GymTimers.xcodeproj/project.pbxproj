@@ -13,6 +13,9 @@
 		291B11032A6B3D3000E93AA4 /* ToolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B11022A6B3D3000E93AA4 /* ToolsModel.swift */; };
 		291B11062A6B3F0200E93AA4 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B11052A6B3F0200E93AA4 /* ScheduleModel.swift */; };
 		291B11082A6B3F1500E93AA4 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B11072A6B3F1500E93AA4 /* ScheduleView.swift */; };
+		299068A52A6C853900576977 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299068A42A6C853900576977 /* PlaylistModel.swift */; };
+		299068A72A6C854D00576977 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299068A62A6C854D00576977 /* PlaylistView.swift */; };
+		299068A92A6C864700576977 /* BurnZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299068A82A6C864700576977 /* BurnZoneView.swift */; };
 		29D689622A69D86B0015E41D /* GymTimersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689612A69D86B0015E41D /* GymTimersApp.swift */; };
 		29D689642A69D86B0015E41D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D689632A69D86B0015E41D /* ContentView.swift */; };
 		29D689662A69D86D0015E41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D689652A69D86D0015E41D /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		291B11022A6B3D3000E93AA4 /* ToolsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsModel.swift; sourceTree = "<group>"; };
 		291B11052A6B3F0200E93AA4 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 		291B11072A6B3F1500E93AA4 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		299068A42A6C853900576977 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
+		299068A62A6C854D00576977 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		299068A82A6C864700576977 /* BurnZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnZoneView.swift; sourceTree = "<group>"; };
 		29D6895E2A69D86B0015E41D /* GymTimers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymTimers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D689612A69D86B0015E41D /* GymTimersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTimersApp.swift; sourceTree = "<group>"; };
 		29D689632A69D86B0015E41D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 			children = (
 				291B11002A6B3D2200E93AA4 /* ToolsView.swift */,
 				291B11022A6B3D3000E93AA4 /* ToolsModel.swift */,
+				299068A82A6C864700576977 /* BurnZoneView.swift */,
 			);
 			path = toolsGroup;
 			sourceTree = "<group>";
@@ -116,6 +123,15 @@
 				291B11072A6B3F1500E93AA4 /* ScheduleView.swift */,
 			);
 			path = ScheduleGroup;
+			sourceTree = "<group>";
+		};
+		299068A32A6C84F900576977 /* PlaylistGroup */ = {
+			isa = PBXGroup;
+			children = (
+				299068A42A6C853900576977 /* PlaylistModel.swift */,
+				299068A62A6C854D00576977 /* PlaylistView.swift */,
+			);
+			path = PlaylistGroup;
 			sourceTree = "<group>";
 		};
 		29D689552A69D86B0015E41D = {
@@ -141,6 +157,7 @@
 		29D689602A69D86B0015E41D /* GymTimers */ = {
 			isa = PBXGroup;
 			children = (
+				299068A32A6C84F900576977 /* PlaylistGroup */,
 				291B11042A6B3EE500E93AA4 /* ScheduleGroup */,
 				291B10FF2A6B3CF800E93AA4 /* toolsGroup */,
 				291B10FA2A6B37A200E93AA4 /* SettingsGroup */,
@@ -325,7 +342,10 @@
 				291B11012A6B3D2200E93AA4 /* ToolsView.swift in Sources */,
 				29D689942A69D8DA0015E41D /* overviewModel.swift in Sources */,
 				291B11082A6B3F1500E93AA4 /* ScheduleView.swift in Sources */,
+				299068A52A6C853900576977 /* PlaylistModel.swift in Sources */,
 				291B11032A6B3D3000E93AA4 /* ToolsModel.swift in Sources */,
+				299068A72A6C854D00576977 /* PlaylistView.swift in Sources */,
+				299068A92A6C864700576977 /* BurnZoneView.swift in Sources */,
 				29D689622A69D86B0015E41D /* GymTimersApp.swift in Sources */,
 				29D689922A69D8C40015E41D /* overviewView.swift in Sources */,
 				291B10FC2A6B37C500E93AA4 /* SettingsModel.swift in Sources */,

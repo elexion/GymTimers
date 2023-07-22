@@ -24,6 +24,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Overview", systemImage: "hare")
                 }
+            PlaylistView()
+                .badge(0)
+                .tabItem {
+                    Label("Playlist", systemImage: "flame")
+                }
             ToolsView()
                 .badge(0)
                 .tabItem {
