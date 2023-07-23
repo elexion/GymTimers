@@ -10,6 +10,9 @@ import SwiftUI
 struct overviewView: View {
     @ObservedObject var overviewModel = OverviewModel()
     
+    // state variables
+    @State private var selectedTab = 0
+    
     var body: some View {
         
         VStack {
@@ -21,6 +24,28 @@ struct overviewView: View {
                     overviewModel.startWorkout()
                 }
             }
+            TabView(selection: $selectedTab) {
+                HomeTabView()
+                    .tabItem {
+                        Text("Home")
+                            .foregroundColor(.primary)
+                            .font(.system(.title))
+                            .padding(.horizontal, 8)
+                            }
+                        .tag(0)
+                Text("another tab")
+                    .tabItem {
+                        Text("Page 1")
+                            .foregroundColor(.primary)
+                            .font(.system(.title))
+                            .padding(.horizontal, 8)
+                            }
+                        .tag(1)
+            }
+            .onAppear {
+                // NYI
+            }
+            .navigationBarTitle("foo")
         }
     }
 }

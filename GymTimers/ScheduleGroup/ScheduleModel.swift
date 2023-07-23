@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class ScheduleModel: ObservableObject {
-    @Published var hasNextWorkout: Bool = false
+    @Published var hasNextWorkout: Bool = true
     
     func nextWorkout() {
         

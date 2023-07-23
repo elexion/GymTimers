@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ScheduleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let scheduleModel = ScheduleModel()
+        
+        Text(scheduleModel.hasNextWorkout ? "next workout will be: " : "No next workout scheduled!")
+        //MultiDatePicker("Foo", selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Binding<Set<DateComponents>>@*/.constant([])/*@END_MENU_TOKEN@*/)
     }
 }
 
