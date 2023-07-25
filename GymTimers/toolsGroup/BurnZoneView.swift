@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct BurnZoneView: View {
+    @StateObject var settingsModel = SettingsModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Your Maximum heart rate should be: \(settingsModel.calculateBurnZone()) beats per minute")
+        }
+        .environmentObject(SettingsModel())
     }
 }
 

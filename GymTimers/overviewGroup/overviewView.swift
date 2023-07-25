@@ -42,10 +42,8 @@ struct overviewView: View {
                             }
                         .tag(1)
             }
-            .onAppear {
-                // NYI
-            }
-            .navigationBarTitle("foo")
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
         }
     }
 }
